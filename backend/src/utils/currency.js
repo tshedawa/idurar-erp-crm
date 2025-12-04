@@ -1,5 +1,6 @@
 const currencyList = [
   'USD',
+  'BTN',
   'CAD',
   'EUR',
   'AED',
