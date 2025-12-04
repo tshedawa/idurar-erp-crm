@@ -53,15 +53,15 @@ export default function Product() {
       render: (price, record) => moneyFormatter({ amount: price, currency_code: record.currency }),
     },
     {
-      title: translate('Tax'),
-      dataIndex: 'tax',
+      title: translate('GST'),
+      dataIndex: 'GST',
       onCell: () => ({
         style: {
           textAlign: 'right',
           whiteSpace: 'nowrap',
         },
       }),
-      render: (tax, record) => moneyFormatter({ amount: tax, currency_code: record.currency }),
+      render: (GST, record) => moneyFormatter({ amount: GST, currency_code: record.currency }),
     },
     {
       title: translate('Total'),
