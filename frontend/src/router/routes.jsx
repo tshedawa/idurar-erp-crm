@@ -9,7 +9,6 @@ const Dashboard = lazy(() => import('@/pages/Dashboard'));
 const Customer = lazy(() => import('@/pages/Customer'));
 const Invoice = lazy(() => import('@/pages/Invoice'));
 const InvoiceCreate = lazy(() => import('@/pages/Invoice/InvoiceCreate'));
-
 const InvoiceRead = lazy(() => import('@/pages/Invoice/InvoiceRead'));
 const InvoiceUpdate = lazy(() => import('@/pages/Invoice/InvoiceUpdate'));
 const InvoiceRecordPayment = lazy(() => import('@/pages/Invoice/InvoiceRecordPayment'));
@@ -28,6 +27,8 @@ const Taxes = lazy(() => import('@/pages/Taxes'));
 const Profile = lazy(() => import('@/pages/Profile'));
 
 const About = lazy(() => import('@/pages/About'));
+
+const Product = lazy(() => import('@/pages/AddItem/index'));
 
 let routes = {
   expense: [],
@@ -118,6 +119,7 @@ let routes = {
       path: '/taxes',
       element: <Taxes />,
     },
+    
 
     {
       path: '/profile',
@@ -126,6 +128,11 @@ let routes = {
     {
       path: '*',
       element: <NotFound />,
+    },
+
+    {
+      path: '/addItem',
+      element: <Product />,
     },
   ],
 };
